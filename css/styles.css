@@ -28,7 +28,7 @@ ul, li {
 }
 a {
 	color: orange;
-	text-decoration: none;
+  text-decoration: none;
 }
 a:hover, a:focus {
 	color: orangered;
@@ -259,14 +259,17 @@ nav h1 a {
   background-color: orange;
   border-radius: 99px;
   color: #fff;
-  display: inline-block;
-  font-size: 10pt;
+  font-size: 1rem;
   max-width: 10rem;
   margin: 1rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   text-align: center;
+  align-self: center;
 }
 
+#restaurants-list h3 {
+  font-weight: bold;
+}
 /* ====================== Restaurant Details ====================== */
 .inside header {
   position: fixed;
