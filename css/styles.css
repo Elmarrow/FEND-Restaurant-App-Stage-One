@@ -1,12 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
