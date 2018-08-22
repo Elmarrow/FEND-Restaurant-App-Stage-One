@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css?family=Lato|Permanent+Marker|Zilla+Slab');
+@import url('https://fonts.googleapis.com/css?family=Lato|Josefin+Slab|Zilla+Slab');
 
 html {
   box-sizing: border-box;
@@ -68,7 +68,8 @@ nav {
 }
 nav h1 {
   line-height: 2.5rem;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Zilla Slab', serif;
+  font-weight: bold;
   display: inline-block;
   vertical-align: middle;
   font-size: 1.5em;
@@ -99,7 +100,7 @@ nav h1 a {
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
-    background-color: #eee;
+    background-color: lightgray;
     font-size: 17px;
     margin: 0;
     width: 100%;
@@ -119,7 +120,7 @@ nav h1 a {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
+    color: tomato;
     text-decoration: none;
 }
 
@@ -233,7 +234,7 @@ nav h1 a {
   justify-content: space-between;
   text-align: center;
   width: calc(33.3333% - 2rem);
-  border-radius: 9px;
+  border-radius: 12px;
   overflow: hidden;
 }
 #restaurants-list .restaurant-img {
@@ -246,7 +247,7 @@ nav h1 a {
 }
 #restaurants-list li h1 {
   color: #f18200;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Zilla Slab', serif;
   line-height: 1.3;
   padding: 0 1rem 0;
   margin: 20px 0 10px;
