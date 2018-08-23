@@ -1,57 +1,79 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css?family=Lato|Josefin+Slab|Zilla+Slab");
-
 /* CSS Document */
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body,td,th,p{
-	font-family: "Lato", sans-serif;
-	font-size: 10pt;
-	color: #333;
+body,
+td,
+th,
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 10pt;
+  color: #333;
   line-height: 1.5;
 }
 
 body {
-	background-color: #fdfdfd;
-	margin: 0;
-	position:relative;
+  background-color: #fdfdfd;
+  margin: 0;
+  position: relative;
 }
 
-ul, li {
-	font-family: "Lato", sans-serif;
-	font-size: 10pt;
+ul,
+li {
+  font-family: "Lato", sans-serif;
+  font-size: 10pt;
   color: #333;
-  padding:0;
+  padding: 0;
 }
 
 a {
-	color: orange;
+  color: orange;
   text-decoration: none;
 }
 
-a:hover, a:focus {
-	color: orangered;
-	text-decoration: none;
+a:hover,
+a:focus {
+  color: orangered;
+  text-decoration: none;
 }
 
-a img{
-	border: none 0px white;
+a img {
+  border: none 0px white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Zilla Slab", serif;
   margin: 0 0 5px;
 }
 
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 #maincontent {
@@ -74,9 +96,12 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 nav {
   width: 100%;
   height: 2.5rem;
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
 }
 
@@ -90,59 +115,63 @@ nav h1 {
   text-transform: uppercase;
 }
 
-@media all and (max-width: 350px){
-  nav h1{
-    font-size:0.85rem;
+@media all and (max-width: 350px) {
+  nav h1 {
+    font-size: 0.85rem;
   }
 }
 
 @media all and (min-width: 480px) and (max-width: 767px) {
-  nav h1{
+  nav h1 {
     font-size: 1.8em;
   }
 }
 
 @media all and (min-width:768px) {
-  nav h1{
+  nav h1 {
     font-size: 2em;
   }
 }
 
 nav h1 a {
-  color:snow;
+  color: snow;
 }
 
 #breadcrumb {
-    padding: 10px 40px 16px;
-    list-style: none;
-    background-color: white;
-    font-size: 17px;
-    margin: 0;
-    width: 100%;
+  padding: 10px 40px 16px;
+  list-style: none;
+  background-color: white;
+  font-size: 17px;
+  margin: 0;
+  width: 100%;
 }
 
 /* Display list items side by side */
+
 #breadcrumb li {
-    display: inline;
+  display: inline;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
+
 #breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
 }
 
 /* Add a color to all links inside the list */
+
 #breadcrumb li a {
-    color: tomato;
-    text-decoration: none;
+  color: tomato;
+  text-decoration: none;
 }
 
 /* Add a color on mouse-over */
+
 #breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
+  color: #01447e;
+  text-decoration: underline;
 }
 
 /* ====================== Map ====================== */
@@ -150,49 +179,49 @@ nav h1 a {
 #map {
   height: 20rem;
   width: 100%;
-  background-color:seashell;
+  background-color: seashell;
 }
 
 /* Map Media Queries */
 
 @media all and (min-width: 960px) and (orientation:portrait) {
-  #map{
+  #map {
     height: 45rem;
   }
 }
 
 @media all and (min-width: 960px) and (orientation:landscape) {
-  #map{
+  #map {
     height: 40rem;
   }
 }
 
-@media all and (min-width: 768px) and (max-width: 959px) and (orientation: landscape){
-  #map{
+@media all and (min-width: 768px) and (max-width: 959px) and (orientation: landscape) {
+  #map {
     height: 25rem;
   }
 }
 
-@media all and (min-width: 768px) and (max-width: 959px) and (orientation: portrait){
-  #map{
+@media all and (min-width: 768px) and (max-width: 959px) and (orientation: portrait) {
+  #map {
     height: 35rem;
   }
 }
 
-@media all and (min-width: 669px) and (max-width: 767px) and (orientation: landscape){
-  #map{
+@media all and (min-width: 669px) and (max-width: 767px) and (orientation: landscape) {
+  #map {
     height: 20rem;
   }
 }
 
-@media all and (min-width: 480px) and (max-width: 767px) and (orientation: portrait){
-  #map{
+@media all and (min-width: 480px) and (max-width: 767px) and (orientation: portrait) {
+  #map {
     height: 25rem;
   }
 }
 
-@media all and (max-width: 668px) and (orientation: landscape){
-  #map{
+@media all and (max-width: 668px) and (orientation: landscape) {
+  #map {
     height: 17rem;
   }
 }
@@ -201,17 +230,20 @@ nav h1 a {
 
 .filter-options {
   width: 100%;
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   align-items: center;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
 }
 
-@media all and (min-width: 660px){
-  .filter-options{
+@media all and (min-width: 660px) {
+  .filter-options {
     flex-direction: row;
   }
 }
@@ -222,6 +254,7 @@ nav h1 a {
   line-height: 1.1;
   margin: 10px;
 }
+
 .filter-options select {
   background-color: white;
   border: 1px solid white;
@@ -248,7 +281,6 @@ nav h1 a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
 }
 
 #restaurants-list li {
@@ -310,17 +342,16 @@ nav h1 a {
 
 @media screen and (max-width: 414px) {
   nav h1 a {
-      letter-spacing: 2px;
+    letter-spacing: 2px;
   }
-
-  #restaurants-list li{
+  #restaurants-list li {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 415px) and (max-width: 800px) {
-  #restaurants-list li{
-      width: calc(50% - 15px);
+  #restaurants-list li {
+    width: calc(50% - 15px);
   }
 }
 
@@ -366,18 +397,18 @@ nav h1 a {
 }
 
 #restaurant-img {
-	width: calc(50% - 6rem);
-    margin: 3rem;
-    float: left;
-    border-radius: 3px;
+  width: calc(50% - 6rem);
+  margin: 3rem;
+  float: left;
+  border-radius: 3px;
 }
 
 #restaurant-address {
   float: left;
-    font-size: 1.8rem;
-    font-weight: 600;
-    width: calc(50% - 3rem);
-    margin: 3rem 3rem 0 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: calc(50% - 3rem);
+  margin: 3rem 3rem 0 0;
 }
 
 #restaurant-cuisine {
@@ -458,11 +489,11 @@ nav h1 a {
     padding: 1rem;
   }
 
-  #reviews-list{
+  #reviews-list {
     flex-direction: column;
   }
 
-  #reviews-list li{
+  #reviews-list li {
     min-width: 100%;
     max-width: 100%;
     margin: 1rem 0;
@@ -474,7 +505,7 @@ nav h1 a {
     margin: 0;
   }
 
-  #restaurant-cuisine{
+  #restaurant-cuisine {
     width: 100%;
     font-size: 1.5rem;
     margin: 0;
@@ -494,6 +525,7 @@ nav h1 a {
     font-size: 1.2rem;
     text-align: center;
   }
+
   #restaurant-hours {
     width: 100%;
     text-align: center;
@@ -502,12 +534,12 @@ nav h1 a {
 }
 
 @media screen and (min-width: 669px) and (max-width: 1024px) {
-  #reviews-list{
+  #reviews-list {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  #reviews-list li{
+  #reviews-list li {
     max-width: 45%;
     min-width: 45%;
   }
@@ -524,7 +556,7 @@ nav h1 a {
     margin: 1rem 0;
   }
 
-  #restaurant-cuisine{
+  #restaurant-cuisine {
     width: 25%;
     font-size: 1rem;
     margin: 0 1rem;
@@ -535,10 +567,10 @@ nav h1 a {
   #restaurant-hours {
     width: 50%;
     text-align: center;
-    margin:10px 10px auto;
+    margin: 10px 10px auto;
     flex-direction: row;
   }
-
+  
   #restaurant-address {
     width: 25%;
     font-size: 1rem;
