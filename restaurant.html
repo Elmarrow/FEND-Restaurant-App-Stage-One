@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
   <!-- Normalize.css for better cross-browser consistency -->
@@ -19,24 +19,24 @@
     <nav>
       <h1><a href="/" aria-label="Link to Restaurant Reviews">Restaurant Reviews</a></h1>
     </nav>
-    <ul id="breadcrumb" >
-      <li><a href="/" aria-label="Link Home">Home</a></li>
+    <ul id="breadcrumb" role="navigation">
+      <li><a href="/" aria-label="Link Home" tabindex="0">Home</a></li>
     </ul>
   </header>
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" aria-label="Zoomed in map of the selected restaurant" role="application" aria-hidden="true"></div>
     </section>
     <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
+      <h1 id="restaurant-name" aria-label="Name of the selected restaurant"></h1>
       <img id="restaurant-img">
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
+      <p id="restaurant-cuisine" aria-label="Cuisine category of the selected restaurant"></p>
+      <p id="restaurant-address" aria-label="Address of the selected restaurant"></p>
+      <table id="restaurant-hours" aria-label="Opening hours of the selected restaurant" role="table"></table>
     </section>
     <section id="reviews-container">
-      <ul id="reviews-list"></ul>
+      <ul id="reviews-list" aria-label="A list of available reviews and rating of the selected restaurant"></ul>
     </section>
   </main>
 
